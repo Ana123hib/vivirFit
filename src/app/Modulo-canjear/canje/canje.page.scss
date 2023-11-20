@@ -4,53 +4,60 @@ ion-header{
 
 .contenedor{
     margin:20px 40px;
-    .contenedor-back{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        p{
-            color:#FF5B35;
-            margin:auto
-        }
-    }
-  
-    .contenedor-canje{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
+    .contenedor-centro{
+        max-width: 700px;
         margin:auto;
-        margin-top: 30px;
-        min-height: 200px;
-        height: 200px;
-        max-width: 500px;
-        margin-bottom: 10px;
-
-        .contenedor-img-canje{
-            background-image: url(/assets/blog-canje.svg);
-            background-size: contain;
-            width: 100%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-           
-            
-        }
-
-        .contenedor-btn-canje{
-            margin-top: 10px;
+        .contenedor-back{
             display: flex;
-
-            button{
-                width: 48%;
-                border-radius: 15px;
+            justify-content: flex-start;
+            align-items: center;
+    
+            p{
+                color:#FF5B35;
+                margin:auto
+            }
+        }
+      
+        .contenedor-canje{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            margin:auto;
+            margin-top: 30px;
+            min-height: 200px;
+            height: 30vw;
+            margin-bottom: 10px;
+            background-color: #F8F8F8;
+            padding: 15px;
+            border-radius: 15px;
+    
+            .contenedor-img-canje{
+                background-image: url(/assets/blog-canje.svg);
+                background-size: contain;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+               
                 
             }
-
-            .btn-naranja{
-                margin-bottom: 0px !important;
-
+    
+            .contenedor-btn-canje{
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+    
+                button{
+                    width:48%;
+                    border-radius: 15px;
+                    
+                }
+    
+                .btn-naranja{
+                    margin-bottom: 0px !important;
+    
+                }
             }
         }
     }

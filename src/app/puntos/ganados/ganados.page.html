@@ -31,22 +31,18 @@
 
         <tbody>
           <ng-container *ngIf="mostrarPuntosGanados; else puntosGastadosTemplate">
-            <!-- Lógica para llenar la tabla con datos de puntos ganados -->
             <tr *ngFor="let dato of datosPuntosGanados">
               <td>{{ dato.columna1 }}</td>
               <td>{{ dato.columna2 }}</td>
               <td>{{ dato.columna3 }}</td>
-              <!-- ... Agrega más columnas según sea necesario -->
             </tr>
           </ng-container>
       
           <ng-template #puntosGastadosTemplate>
-            <!-- Lógica para llenar la tabla con datos de puntos perdidos -->
             <tr *ngFor="let dato of datosPuntosGastados">
               <td>{{ dato.columna1 }}</td>
               <td>{{ dato.columna2 }}</td>
               <td>{{ dato.columna3 }}</td>
-              <!-- ... Agrega más columnas según sea necesario -->
             </tr>
           </ng-template>
         </tbody>
@@ -58,3 +54,33 @@
 
 
 </ion-content>
+
+
+<footer>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" class="circle-icon">
+      <img src="assets/icon-home.svg" alt="Perfil Icon" />
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+  
+    <ion-tab-button tab="perfil" class="circle-icon">
+      <img src="assets/img-persona-b.svg" alt="Perfil Icon" />
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="centro" class="corazon-icon corazon-activo">
+      <img src="assets/img-corazon.svg" alt="Centro Icon" />
+      <div class="linea-corazon"></div>  
+    </ion-tab-button>
+  
+    <ion-tab-button tab="search" class="circle-icon">
+      <img src="assets/icon-buscar.svg" alt="Perfil Icon" />
+      <ion-label>Buscar</ion-label>
+    </ion-tab-button>
+  
+    <ion-tab-button tab="transacciones" class="circle-icon">
+      <img src="assets/icon-canjear.svg" alt="Perfil Icon" />
+      <ion-label>Canjear</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</footer>

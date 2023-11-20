@@ -146,6 +146,7 @@
     .btn-activo{
         a{
             background-color: #FF5B35;
+            border:none !important;
             img{
                 filter: grayscale(100%);
                 filter: brightness(0) invert(1);
@@ -180,7 +181,7 @@
 
 
   .corazon-icon
-  {position: relative; z-index: 1;
+  {position: relative; z-index: 7755656;
     .linea-corazon{
         background-color: #FF5C36;
         height: 3px;
@@ -198,21 +199,30 @@
         top: -35px;
         left: 50%;  
         transform: translateX(-50%); 
+        z-index: 77556568888888888;
+    }
+  }
+
+
+  .corazon-activo{
+    img{
+        box-shadow: 0px 4px 16px 10px rgba(255, 92, 54, 0.4);   
     }
   }
 
   ion-tab-bar {
-    overflow: visible;z-index: 2;
+    overflow: visible;z-index: 25435;
   }
   
   footer {
     width: 90%;
-    margin: 0 auto;  
+    margin: auto;  
     background-color: #fff;  
     border-radius: 15px;  
-    padding: 5px;
+    padding: 20px;
     box-shadow: 0px 4px 17px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    z-index: 23388888;
   }
 
   .contenedor-btn{

@@ -52,12 +52,13 @@ ion-header {
       justify-content: flex-start;
       align-items: center;
       margin: auto;
-      margin-bottom: 20px;
-      width: 70%;
+      margin-bottom: 50px;
+      width: 86%;
   
       p {
         color: #FF5B35;
         margin: auto;
+        font-size: clamp(14px, 3.8vw, 40px);
       }
     }
   
@@ -104,13 +105,14 @@ ion-header {
           color: #fff;
   
           h3 {
-            font-size: 6vw;
+            font-size: clamp(20px,6vw, 45px);
             margin-bottom: 0;
             font-weight: 600;
           }
   
           p {
             margin-top: 0;
+            font-size: clamp(20px, 3.5vw, 29px);
           }
         }
   
@@ -119,6 +121,13 @@ ion-header {
           top: 43%;
           left: 50%;
           transform: translate(-50%, -50%);
+
+          img{
+            width:8vw;
+            height: 8vw;
+            max-width: 70px;
+            max-height: 70px;
+          }
         }
       }
   
@@ -161,6 +170,8 @@ ion-header {
                 position: absolute;
                 left: 6vw;
                 width: 6vw;
+                max-width: 90px;
+                max-height: 90px;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -169,6 +180,7 @@ ion-header {
                 font-size: 3.7vw;
                 position: absolute;
                 margin-left: 10vw;
+                font-size: clamp(20px, 3.7vw, 32px);
             }
 
           }

@@ -86,6 +86,8 @@ ion-content {
   
     .contenido-adicional {
       width: 80vw; 
+      max-width: 700px;
+      margin:auto;
       margin-top: 2vh;
 
       .tabla-header {
@@ -102,7 +104,7 @@ ion-content {
           border-bottom: 1px ;
           border-bottom: 1px solid #B3B3B3;
           font-weight: 600;
-          font-size: 15px;
+          font-size: clamp(15px, 3.2vw, 40px);
           &:hover {
             border-bottom: 2px solid #FF5B35;
           }
@@ -115,10 +117,11 @@ ion-content {
         border-collapse: collapse;
       
         th, td {
-          padding: 10px;
+          padding: 16px;
           text-align: left;
           border-bottom: 1px solid #ddd;
           color:#B3B3B3;
+          font-size: clamp(15px, 3.0vw, 35px);
         }
       
         th:first-child,
