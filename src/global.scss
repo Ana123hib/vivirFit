@@ -1,0 +1,245 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+.input-blanco{
+    padding: 12px 18px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+    border:1px solid #FF5C36;
+    
+}
+
+
+.btn-blanco{
+    border:1px solid #FF5C36;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 13px ;
+    color:#FF5C36;
+    margin: auto;
+    display: block;           
+}
+
+.btn-naranja{
+    border:1px solid #FF5C36 ;
+    border-radius: 30px;
+    background-color: #FF5C36;
+    padding: 13px ;
+    color:#fff;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px !important;
+}
+.btn-gris{
+    border-radius: 30px;
+    background-color: #F3F3F3;
+    padding: 14px 20px;
+    color:#6B6B6B;
+    margin: auto;
+    display: block;
+    text-align: left;
+}
+
+.btn-negro{
+    border-radius: 30px;
+    background-color: #000;
+    padding: 14px 20px;
+    color:#fff;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+
+.input-gris{
+    padding: 12px 18px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+    background-color: #F3F3F3;
+    border: none;
+    
+}
+
+.btn-flecha{
+    background-image: url(/assets/flecha-volver.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border:1px solid #FF5C36;
+    background-position: center;
+    padding:12px 17px;
+    border-radius: 13px;
+}
+
+.flecha-rot{
+    transform: rotate(180deg);
+}
+
+
+.contenedor-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    padding-top: 30px !important;
+    background-color: #FF5B35;
+    align-items: center; 
+    border-bottom-right-radius: 40px;
+    
+    .img-perfil{
+        background-image: url(/assets/img-perfil.svg);
+        height: 13vw;
+        width: 13vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img-logo{
+        background-image: url(/assets/logo-horizontal.svg);
+        height: 11vw;
+        width:28vw;
+        background-size: cover;
+        background-position: center;
+        margin-left: -23px;
+    }
+
+    .img-menu{
+        background-image: url(/assets/icon-menu.svg);
+        height: 4vw;
+        width:6vw;
+        margin-right: 2vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    
+}
+
+.contenedor-botones{
+    max-width: 700px;
+    margin:auto;
+    .btn-activo{
+        a{
+            background-color: #FF5B35;
+            img{
+                filter: grayscale(100%);
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+
+
+.contenedor-back{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px !important;
+    margin:auto;
+}
+
+
+.circle-icon {
+    img {
+        width: 39px;  // Ajusta el tamaño de la imagen según sea necesario
+        height: 39px; // Ajusta el tamaño de la imagen según sea necesario
+        border-radius: 50%;
+        
+        padding: 4px;  // Espacio entre el borde y la imagen, ajusta según sea necesario
+      }
+      ion-label {
+        color:#B3B3B3;
+        font-size: 12px;  // Ajusta según sea necesario
+      }
+  }
+
+
+  .corazon-icon
+  {position: relative; z-index: 1;
+    .linea-corazon{
+        background-color: #FF5C36;
+        height: 3px;
+        border-radius:2px;
+        width: 25px;
+        margin-top: 20px;
+    }
+    img
+    {
+        background-color: #FF5C36;
+        padding: 13px 11px;
+        border-radius: 500%;
+        box-shadow: 0px 4px 17px 0 rgba(0, 0, 0, 0.3);   
+        position: absolute;
+        top: -35px;
+        left: 50%;  
+        transform: translateX(-50%); 
+    }
+  }
+
+  ion-tab-bar {
+    overflow: visible;z-index: 2;
+  }
+  
+  footer {
+    width: 90%;
+    margin: 0 auto;  
+    background-color: #fff;  
+    border-radius: 15px;  
+    padding: 5px;
+    box-shadow: 0px 4px 17px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+  .contenedor-btn{
+    position: relative;
+
+    img{
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        right: 14px;
+    }
+  }
+
+
+  .contenedor-registro{
+    max-width: 700px;
+    margin:auto;
+  }
+
+
+  $color-destino: #FF5C36;
+
+  .menu-activo {
+    background-color: $color-destino;
+    mask: url('assets/icon-home.svg') no-repeat center center;
+    -webkit-mask: url('assets/icon-home.svg') no-repeat center center;
+    background-blend-mode: multiply; // Puedes ajustar este valor según sea necesario
+  }
+  
+  

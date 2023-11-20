@@ -1,0 +1,7 @@
+{
+  "name": "VivirFit-App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

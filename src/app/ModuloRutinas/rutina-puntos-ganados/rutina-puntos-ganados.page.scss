@@ -1,0 +1,111 @@
+ion-header{
+    border-bottom-right-radius: 50px;
+}
+
+
+ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 700px;
+      margin: auto;
+      margin-top: 4vh; 
+
+
+      h2{
+        margin: auto;
+        margin-top: 80px;
+        color: #FF5B35;
+        font-size: 8vw;
+        margin-bottom: 30px;
+      }
+    
+  
+    .puntos-circulo-grande {
+      background-color: #FF5B35;
+      border-radius: 50%;
+      width: 65vw; // Ajusta el tamaño según tus necesidades
+      height: 65vw; // Ajusta el tamaño según tus necesidades
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+  
+      .puntos-circulo-pequeño {
+        background-color: transparent;
+        border: 4px solid #FFD371;
+        border-radius: 50%;
+        width: 88%;
+        height: 88%;
+       border-right: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        
+       
+        .puntos-info {
+          text-align: center;
+          color: #fff;
+          z-index: 2;
+          margin-top: 50px;
+  
+          h4 {
+            margin: 0;
+            font-size: 9vw; // Ajusta el tamaño según tus necesidades
+          }
+  
+          p {
+            margin: 0;
+            font-size: 4vw; // Ajusta el tamaño según tus necesidades
+          }
+        }
+      }
+  
+      .img-corazon {
+        position: absolute;
+        top: 15vw;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(/assets/img-corazon.svg);
+        background-size: contain;
+        width: 15vw;
+        height: 15vw;
+        z-index: 3;
+        background-repeat: no-repeat;
+  
+      }
+
+    }
+  
+    .contenido-adicional {
+      width: 80vw; 
+      margin-top: 2vh;
+
+
+      button{
+        background-color: #000;
+        color:#fff;
+        width: 100%;
+        padding: 15px;
+        margin-top: 90px;
+        text-align: center;
+        border-radius: 8px;
+      }
+      
+    }}
+  }
+  
+
+
+  
+
+  

@@ -1,0 +1,86 @@
+ion-header{
+    border-bottom-right-radius: 50px;
+}
+
+
+ion-content {
+
+  
+
+      .contenedor{
+        margin:40px 50px;
+
+        .contenedor-completado{
+            background-color: #FF5C36;
+            color:#fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin:auto;
+
+
+            .contenedor-tiempo{
+                display: flex;
+                justify-content: space-around;
+                margin-top:25px;
+
+                p{
+                    margin: 5px;
+                }
+            }
+        }
+
+
+
+        .contendor-info{
+            max-width: 700px;
+            margin:auto;
+            background-color: #F6F6F6;
+            padding: 20px 45px;
+            margin-top: 40px;
+            border-radius: 10px;
+
+            .info-fila{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #B3B3B3;
+                padding: 8px ;
+                
+                p:first-child{
+                    font-weight: 600;
+                }
+
+                p:last-child{
+                    color:#FF5C36;
+                }
+                
+            }
+
+            .info-fila:last-child{
+                border:none;
+            }
+
+            
+        }
+        button{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 700px;
+            background-color: #000;
+            color:#fff;
+            width: 100%;
+            margin-top: 30px;
+            padding: 13px;
+            border-radius: 8px;
+        }
+        
+      }
+}
+  
+
+
+  
+
+  

@@ -1,0 +1,59 @@
+.contenedor{
+    margin:10px 30px;
+    p{
+        color:#FF5C36;
+        margin:23px 8px 8px 8px
+    }
+    
+    .contenedor-back{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .btn-flecha{
+            background-image: url(/assets/flecha-volver.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border:1px solid #FF5C36;
+            background-position: center;
+            padding:12px 17px;
+            border-radius: 13px;
+        }       
+    }
+
+    .contenedor-registro
+    { 
+        max-width: 700px;
+        margin: auto;
+        .contenedor-img{         
+            width: 100px;
+            height: 200px;
+            margin: auto;
+            .img-candado{
+                background-image: url(/assets/logo-candado.svg);
+                background-size: contain;
+                margin-top: 50px;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+        }
+
+        .contenedor-info{
+            width: 90%;
+            margin: auto;
+
+            input{
+                width: 100%;
+            }
+
+            button{
+                width: 100%;
+                margin-top: 45px;
+            }
+        }
+    }
+    
+}

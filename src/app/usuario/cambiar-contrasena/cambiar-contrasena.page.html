@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+<div class="contenedor">
+  <div class="contenedor-back">
+    <a><div class="btn-flecha"></div></a>   <p>Cambiar <br>Contraseña</p>
+  </div>
+
+  <div class="contenedor-registro">
+    <div class="contenedor-img">
+      <div class="img-persona"></div>
+    </div> 
+   <div class="contenedor-info">
+    <p>Contraseña anterior</p>
+        <div class="contenedor-btn">
+        <input type="password" class="input-gris">
+        <a><img src="assets/icon-ojo.svg"></a>
+      </div>
+
+    <p>Nueva contraseña</p>
+        <div class="contenedor-btn">
+        <input type="password" class="input-gris">
+        <a><img src="assets/icon-ojo.svg"></a>
+      </div>
+    
+      <p>Repite contraseña</p>
+        <div class="contenedor-btn">
+        <input type="password" class="input-gris">
+        <a><img src="assets/icon-ojo.svg"></a>
+      </div>
+   </div>
+    
+  </div>
+  
+</div>
+</ion-content>
+<footer>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" class="circle-icon">
+      <img src="assets/icon-home.svg" alt="Perfil Icon" />
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+  
+    <ion-tab-button tab="perfil" class="circle-icon">
+      <img src="assets/img-persona-b.svg" alt="Perfil Icon" />
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="centro" class="corazon-icon">
+      <img src="assets/img-corazon.svg" alt="Centro Icon" />
+      <div class="linea-corazon"></div>  
+    </ion-tab-button>
+  
+    <ion-tab-button tab="search" class="circle-icon">
+      <img src="assets/icon-buscar.svg" alt="Perfil Icon" />
+      <ion-label>Buscar</ion-label>
+    </ion-tab-button>
+  
+    <ion-tab-button tab="transacciones" class="circle-icon">
+      <img src="assets/icon-canjear.svg" alt="Perfil Icon" />
+      <ion-label>Canjear</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</footer>

@@ -1,0 +1,76 @@
+.body{
+    background-color: #FF5C36 !important;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+
+
+.contenedor{
+    background-color: #FF5C36 !important;
+
+    margin:10px 30px;
+    
+    p{
+        color:#fff;
+        margin:23px 8px 8px 8px
+    }
+    
+    .contenedor-back{
+   
+        .btn-flecha{
+            background-image: url(/assets/flecha-volver-color.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border:1px solid #fff;
+            background-position: center;
+            padding:12px 17px;
+            border-radius: 13px;
+        }       
+    }
+
+    .contenedor-registro
+    { 
+        .contenedor-img{ 
+            width: 200px;  
+            height: 200px;      
+            max-width: 250px;
+            max-height: 250px;
+            margin: auto;
+            margin-top: 220px;
+            margin-bottom: 90px;
+            .img-logo{
+                background-image: url(/assets/LogoOscuro.svg);
+                background-size: contain;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+        }
+
+        .contenedor-info{
+            width: 90%;
+            margin: auto;
+            max-width: 700px;
+
+            input{
+                width: 100%;
+            }
+
+            button{
+                width: 100%;
+                margin-top: 50px;
+            }
+
+           a{
+            
+                text-align: center;
+           }
+        }
+    }
+    
+}}
+
+
+

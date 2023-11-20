@@ -1,0 +1,100 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+  <div class="contenedor-menu">
+    <div class="img-perfil img-container"></div>
+  <div class="img-logo img-container"></div>
+  <div class="img-menu img-container"></div> 
+  </div>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="contenedor">
+    <div class="contenedor-botones">
+      <div class="boton btn-activo">
+        <a>
+          <img src="/assets/icon-usuario.svg" alt="Botón 1">
+        </a>
+        <p>Rutinas</p>
+      </div>
+    
+      <div class="boton">
+        <a>
+          <img src="/assets/icon-corazon.svg" alt="Botón 2">
+        </a>
+        <p>Salud</p>
+      </div>
+    
+      <div class="boton">
+        <a>
+          <img src="/assets/icon-rayo.svg" alt="Botón 3">
+        </a>
+        <p>Tips</p>
+      </div>
+    </div>
+
+    <div class="contenedor-grilla">
+      <div class="celda">
+        <button class="btn-blanco">Iniciar</button>
+        <div class="contenedor-info">
+        <h4>Cardio Blast</h4>
+        <p>7-10 min</p>
+        <p>Dificil</p>
+      </div>
+      </div>
+      <div class="celda">
+        <button class="btn-blanco">Iniciar</button>
+        <div class="contenedor-info">
+        <h4>Cardio Blast</h4>
+        <p>7-10 min</p>
+        <p>Dificil</p>
+        </div>
+      </div>
+      <div class="celda">
+        <button class="btn-blanco">Iniciar</button>
+        <div class="contenedor-info">
+        <h4>Cardio Blast</h4>
+        <p>7-10 min</p>
+        <p>Dificil</p>
+        </div>
+      </div>
+      <div class="celda">
+        <h4>Nueva <br>Rutina</h4>
+        <div class="icon-more"><a>
+          <img src="/assets/icon-more.svg" alt="Botón 1">
+          </a>
+        </div>
+      </div>
+  </div>
+  
+  </div>
+</ion-content>
+
+<footer>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" class="circle-icon">
+      <img src="assets/icon-home.svg" alt="Perfil Icon" />
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+  
+    <ion-tab-button tab="perfil" class="circle-icon">
+      <img src="assets/img-persona-b.svg" alt="Perfil Icon" />
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="centro" class="corazon-icon">
+      <img src="assets/img-corazon.svg" alt="Centro Icon" />
+      <div class="linea-corazon"></div>  
+    </ion-tab-button>
+  
+    <ion-tab-button tab="search" class="circle-icon">
+      <img src="assets/icon-buscar.svg" alt="Perfil Icon" />
+      <ion-label>Buscar</ion-label>
+    </ion-tab-button>
+  
+    <ion-tab-button tab="transacciones" class="circle-icon">
+      <img src="assets/icon-canjear.svg" alt="Perfil Icon" />
+      <ion-label>Canjear</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</footer>

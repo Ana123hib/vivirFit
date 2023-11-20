@@ -1,0 +1,88 @@
+ion-header {
+    border-bottom-right-radius: 50px;
+  }
+  
+  .contenedor {
+    margin: 20px 40px;
+  
+    .contenedor-back {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 40px;
+  
+      p {
+        color: #FF5B35;
+        margin: auto;
+      }
+    }
+  
+    .grilla {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+  
+      .celda {
+        display: flex;
+        position: relative;
+        background-image: url(/assets/img-rutina.svg);
+        background-size: cover;
+        width: calc(100vw - 100px);
+        height: calc(57vw - 100px);
+        background-repeat: no-repeat;
+        border-radius: 5vw;
+
+        color:#fff;
+        
+
+
+        &:nth-child(even) {
+          color: #FF5B35;
+        }
+  
+        .info-rutina {
+          display: flex;
+          padding: 4vw;
+          flex-direction: column;
+          justify-content: space-between;
+          position: absolute;
+          height: 100%;
+         
+
+          h4{
+            color:#fff;
+            font-size: clamp(15px, 5vw, 85px);
+          }
+
+          p{
+            font-size: clamp(15px, 5vw, 85px);
+
+          }
+        }
+
+  
+       
+        .btn-blanco {
+          position: absolute;
+          bottom: 4vw;
+          right: 4vw;
+          width: 25vw;
+          font-weight: 600;
+          font-size: 3vw;
+        }
+  
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 5vw;
+          background: linear-gradient(to top, #FF5C36 0%, transparent 70%);
+        }
+      }
+    }
+  }
+  
