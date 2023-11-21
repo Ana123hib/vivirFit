@@ -35,12 +35,13 @@
                 margin: 0;
                 margin-bottom: 25px;
                 color:#FF5B35;
-                font-size: clamp(13px, 3.5vw, 42px);
+                font-size: clamp(15px, 4vw, 42px);
             }
             .wrap-autor{
                 display: flex;
                 border-bottom:1px solid #9F9F9F;
                 margin-bottom: 20px;
+                padding-bottom:15px;
                 
                 img{
                     width: 15vw;
@@ -53,7 +54,7 @@
     
                     h4{
                         margin-bottom: 0px;
-                        font-size: clamp(13px, 3.3vw, 38px);
+                        font-size: clamp(15px, 4vw, 42px);
                     }
                     .text-title{
                         color:#9F9F9F;

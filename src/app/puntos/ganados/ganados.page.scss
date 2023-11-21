@@ -85,7 +85,7 @@ ion-content {
     }
   
     .contenido-adicional {
-      width: 80vw; 
+      width: 100vw; 
       max-width: 700px;
       margin:auto;
       margin-top: 2vh;
@@ -118,15 +118,17 @@ ion-content {
       
         th, td {
           padding: 16px;
-          text-align: left;
+          text-align: center;
           border-bottom: 1px solid #ddd;
           color:#B3B3B3;
+          width: 38%;
           font-size: clamp(15px, 3.0vw, 35px);
         }
       
         th:first-child,
         td:first-child {
           color: #FFD371;
+          width: 24%;
         }
       
         tr {

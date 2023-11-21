@@ -12,6 +12,18 @@
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
+@font-face {
+  font-family: 'Meridiana';
+  src: url('/assets/MeridianaPro-Regular.otf') format('truetype');
+}
+
+body{
+  p,h2,h3,h4,a,button{
+    font-family: 'Meridiana';
+  }
+
+  
+}
 
 /* Basic CSS for apps built with Ionic */
 @import "@ionic/angular/css/normalize.css";
@@ -123,8 +135,8 @@
 
     .img-logo{
         background-image: url(/assets/logo-horizontal.svg);
-        height: 11vw;
-        width:28vw;
+        height: 14vw;
+        width:35.2vw;
         background-size: cover;
         background-position: center;
         margin-left: -23px;
@@ -132,8 +144,8 @@
 
     .img-menu{
         background-image: url(/assets/icon-menu.svg);
-        height: 4vw;
-        width:6vw;
+        height: 4.4vw;
+        width:6.4vw;
         margin-right: 2vw;
         background-size: cover;
         background-position: center;
@@ -168,65 +180,72 @@
 }
 
 
-.circle-icon {
-    img {
-        width: 39px;  // Ajusta el tamaño de la imagen según sea necesario
-        height: 39px; // Ajusta el tamaño de la imagen según sea necesario
-        border-radius: 50%;
-        
-        padding: 4px;  // Espacio entre el borde y la imagen, ajusta según sea necesario
-      }
-      ion-label {
-        color:#B3B3B3;
-        font-size: 12px;  // Ajusta según sea necesario
-      }
-  }
-
-
-  .corazon-icon
-  {position: relative; z-index: 7755656;
-    .linea-corazon{
-        background-color: #FF5C36;
-        height: 3px;
-        border-radius:2px;
-        width: 25px;
-        margin-top: 20px;
-    }
-    img
-    {
-        background-color: #FF5C36;
-        padding: 13px 11px;
-        border-radius: 500%;
-        box-shadow: 0px 4px 17px 0 rgba(0, 0, 0, 0.3);   
-        position: absolute;
-        top: -35px;
-        left: 50%;  
-        transform: translateX(-50%); 
-        z-index: 77556568888888888;
-    }
-  }
-
-
-  .corazon-activo{
-    img{
-        box-shadow: 0px 4px 16px 10px rgba(255, 92, 54, 0.4);   
-    }
-  }
-
-  ion-tab-bar {
-    overflow: visible;z-index: 25435;
-  }
-  
-  footer {
+.custom-footer {
     width: 90%;
-    margin: auto;  
-    background-color: #fff;  
-    border-radius: 15px;  
-    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 9px ;
     box-shadow: 0px 4px 17px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     z-index: 23388888;
+    position: relative;  // Añade posición relativa
   }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;  // Distribuye los elementos equitativamente
+  }
+  
+  .circle-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  // Centra los elementos verticalmente
+    text-align: center;   // Centra el texto
+    img {
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      padding: 4px;
+    }
+  
+    ion-label {
+      color: #B3B3B3;
+      font-size: 12px;
+    }
+  }
+  
+  .corazon-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+    img {
+      background-color: #FF5C36;
+      padding: 13px 11px;
+      border-radius: 500%;
+      box-shadow: 0px 4px 17px 0 rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+  
+    .linea-corazon {
+      background-color: #FF5C36;
+      height: 3px;
+      border-radius: 2px;
+      width: 25px;
+      margin-top: 12px;  // Ajusta según sea necesario
+    }
+  }
+  
+  .corazon-activo {
+    img {
+      box-shadow: 0px 4px 16px 10px rgba(255, 92, 54, 0.4);
+    }
+  }
+  
 
   .contenedor-btn{
     position: relative;
@@ -254,5 +273,56 @@
     -webkit-mask: url('assets/icon-home.svg') no-repeat center center;
     background-blend-mode: multiply; // Puedes ajustar este valor según sea necesario
   }
+
+  .contenedor-centro{
+    margin:auto;
+    max-width: 700px;
+  }
   
+
+  .contenedor-botones {
+    max-width: 700px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 23px; 
+      padding:0 10px;
+      margin: auto;
+  
+      .boton {
+        width: 28%; 
+        text-align: center;
+        box-sizing: border-box;
+  
+        a {
+          display: block;
+          border: 1px solid #B3B3B3;
+          width: 100%;
+          height: 50%; 
+          padding-top: 100%; 
+          position: relative;
+          border-radius: 15px;
+          margin-bottom: 10px;
+  
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            width: 45%; 
+            height:45%; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+  
+        p {
+          margin: 0;
+          color:#B3B3B3;
+          font-size: clamp(15px, 2.9vw, 30px);
+
+          
+        }
+      }
+    }
   

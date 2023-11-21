@@ -6,45 +6,9 @@ ion-header {
     margin: 20px 50px;
   
     .contenedor-botones {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 23px; 
-        padding: 0 30px;
-        margin-bottom: 60px;
-    
-        .boton {
-          width: 25%; 
-          text-align: center;
-          box-sizing: border-box;
-    
-          a {
-            display: block;
-            border: 1px solid #B3B3B3;
-            width: 100%; 
-            padding-top: 100%; 
-            position: relative;
-            border-radius: 20px;
-            margin-bottom: 10px;
-    
-            img {
-              max-width: 100%;
-              max-height: 100%;
-              width: 43%; 
-              height: 43%; 
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-          }
-    
-          p {
-            margin: 0;
-            color:#B3B3B3;
-            font-size: 3vw;
-          }
-        }
+        
+      margin-bottom: 70px;  
+      
       }
   
     .grilla {

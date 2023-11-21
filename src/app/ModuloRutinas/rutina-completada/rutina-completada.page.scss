@@ -14,7 +14,7 @@ ion-content {
             background-color: #FF5C36;
             color:#fff;
             text-align: center;
-            padding: 20px;
+            padding: 33px 0px 20px;
             border-radius: 15px;
             max-width: 700px;
             margin:auto;
@@ -29,6 +29,11 @@ ion-content {
                     margin: 5px;
                 }
             }
+
+            h2{
+                margin-bottom: 50px;
+                font-size: clamp(30px, 3.9vw , 50px);
+            }
         }
 
 
@@ -37,7 +42,7 @@ ion-content {
             max-width: 700px;
             margin:auto;
             background-color: #F6F6F6;
-            padding: 20px 45px;
+            padding: 20px 30px;
             margin-top: 40px;
             border-radius: 10px;
 
@@ -74,6 +79,7 @@ ion-content {
             margin-top: 30px;
             padding: 13px;
             border-radius: 8px;
+            margin-bottom: 50px;
         }
         
       }

@@ -26,6 +26,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-end;
+            margin:0 20px;
             
             
             .contenedor-img {
@@ -66,8 +67,9 @@
             .txt-nombre, .txt-edad{
             text-align: left;
             margin-top: 5px;
-            margin-bottom: 34px;
+            margin-bottom: 35px;
             margin-left: 20px;
+            
           }  
         }
         

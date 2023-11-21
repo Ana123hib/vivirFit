@@ -31,7 +31,7 @@ ion-header {
         width: calc(100vw - 100px);
         height: calc(57vw - 100px);
         background-repeat: no-repeat;
-        border-radius: 5vw;
+        border-radius: 4vw;
 
         color:#fff;
         
@@ -52,11 +52,12 @@ ion-header {
 
           h4{
             color:#fff;
-            font-size: clamp(15px, 5vw, 85px);
+            font-size: clamp(15px, 4.8vw, 85px);
+            margin-left: 7px;
           }
 
           p{
-            font-size: clamp(15px, 5vw, 85px);
+            font-size: clamp(13px, 4vw, 80px);
 
           }
         }
@@ -67,9 +68,11 @@ ion-header {
           position: absolute;
           bottom: 4vw;
           right: 4vw;
-          width: 25vw;
+          width: 26vw;
           font-weight: 600;
           font-size: 3vw;
+          padding: clamp(10px,2.2vw,30px);
+          border: none;
         }
   
         &::before {
@@ -79,7 +82,7 @@ ion-header {
           left: 0;
           width: 100%;
           height: 100%;
-          border-radius: 5vw;
+          border-radius: 4vw;
           background: linear-gradient(to top, #FF5C36 0%, transparent 70%);
         }
       }
