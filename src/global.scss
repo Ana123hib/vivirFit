@@ -265,14 +265,7 @@ body{
   }
 
 
-  $color-destino: #FF5C36;
 
-  .menu-activo {
-    background-color: $color-destino;
-    mask: url('assets/icon-home.svg') no-repeat center center;
-    -webkit-mask: url('assets/icon-home.svg') no-repeat center center;
-    background-blend-mode: multiply; // Puedes ajustar este valor según sea necesario
-  }
 
   .contenedor-centro{
     margin:auto;
